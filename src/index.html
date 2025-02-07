@@ -70,21 +70,22 @@
 
             <h1 class="pt-6 text-3xl font-semibold">Cart Totals</h1>
 
-            <div class="flex pt-10 gap-14">
+            <div class="flex pt-10 gap-16">
 
                 <span>Subtotal:</span>
                 <span id="subtotal" class="font-medium text-gray-700">₹0</span>
             </div>
 
-            <div class="flex pt-6 gap-20">
+            <div class="flex pt-6 gap-16">
 
                 <span>Total:</span>
                 <span id="total" class="text-xl font-bold text-yellow-500">₹0</span>
             </div>
-            
-            <button class="mt-8 h-12 w-40 border-black border-2 rounded-lg hover:bg-[#f0c7a4]">
+
+            <button class="mt-8 h-12 w-40 border-black border-2 rounded-lg hover:bg-[#f0c7a4]" id="checkoutBtn">
                 Check Out
             </button>
+            <div id="toast" class="toast">Proceeding to checkout...</div>
         </div>
 
     </section>

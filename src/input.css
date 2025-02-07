@@ -6,12 +6,23 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-* Responsive Container */ 
+
 .container {
   @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
 }
 
-/* Utility Classes */
 .responsive-text {
   @apply text-base sm:text-lg md:text-xl lg:text-2xl xl:text-3xl;
+}
+
+.toast {
+  display: none;
+  position: fixed;
+  /* bottom: 100px; */
+  left: 50%;
+  transform: translateX(-50%);
+  background: #f0c7a4;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
 }

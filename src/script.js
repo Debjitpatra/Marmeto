@@ -68,21 +68,30 @@ const renderCartItems = (items) => {
 
 
 // Function to Update Totals
-const updateTotals = (subtotal) => {
-    const subtotalEl = document.getElementById("subtotal");
-    const totalEl = document.getElementById("total");
+const updateTotals = (originalTotalPrice) => {
+    if (!subtotalEl || !totalEl || originalTotalPrice === undefined) return;
 
-    
+    const subtotal = originalTotalPrice;
 
-    const formattedSubtotal = new Intl.NumberFormat("en-IN", {
-        style: "currency",
-        currency: "INR",
-        minimumFractionDigits: 2,
-    }).format(subtotal);
-
-    subtotalEl.innerText = formattedSubtotal;
-    totalEl.innerText = formattedSubtotal; // If tax/shipping exists, modify accordingly
+    subtotalEl.innerText = subtotal;
+    totalEl.innerText = subtotal;
 };
+
+// Example usage
+updateTotals(250000); // Pass the price directly  
+
+
+
+document.getElementById("checkoutBtn").addEventListener("click", () => {
+    const toast = document.getElementById("toast");
+    toast.style.display = "block";
+
+    // Hide after 2 seconds
+    setTimeout(() => { toast.style.display = "none"; }, 4000);
+});
+
+
+
 
 
 
