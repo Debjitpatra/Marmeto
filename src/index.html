@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./output.css" rel="stylesheet">
+    <Title>Marmeto</Title>
+</head>
+
+<body>
+    <header class="h-[80px] bg-[#FFFFFF] flex px-4 gap-[300px]">
+
+        <div class="flex items-center">
+
+            <img class="h-12 w-16" src="./images/Company Logo.png" alt="">
+            <h1 class="text-2xl font-semibold">Marmeto</h1>
+        </div>
+
+        <div>
+            <ul class="flex py-7 gap-12">
+                <li>home</li>
+                <li>shop</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </div>
+
+        <div class="flex py-7 gap-8">
+            <img class="h-6 w-6" src="./images/Search Logo.png" alt="">
+            <img class="h-6 w-6" src="./images/Hear Logo.png" alt="">
+            <img class="h-6 w-8" src="./images/Cart Logo.png" alt="">
+        </div>
+
+
+    </header>
+
+    <section>
+        <div
+            class="bg-[url('https://media.istockphoto.com/id/1158785202/photo/modern-houseplants.jpg?s=612x612&w=0&k=20&c=zZXRCAdE7Jdm3DkczxwhwUHs4h1UI9H57klsSm4pVBA=')] bg-cover bg-center backdrop-blur-2xl h-72">
+
+            <div class="flex flex-col items-center justify-center h-64  w-full ">
+                <h1 class="text-5xl font-semibold">CART</h1>
+                <p class="text-gray-500">Home > Cart</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="h-[500px] flex px-14 pt-14 gap-4">
+
+        <!-- Cart Items -->
+        <div class="h-[350px] w-[800px]">
+            <div class="flex font-medium bg-[#dccdc0] h-10 items-center pl-24 gap-28 rounded-lg">
+                <div class="flex gap-28">
+                    <h1>Product</h1>
+                    <h1>Price</h1>
+                </div>
+                <div class="flex gap-24">
+                    <h1>Quantity</h1>
+                    <h1>Subtotal</h1>
+                </div>
+            </div>
+
+            <!-- Dynamic Cart Items -->
+            <div id="cartItems" class="flex flex-col gap-4 pt-8"></div>
+        </div>
+
+        <!-- Cart Totals -->
+        <div class="h-[340px] w-[350px] bg-[#dccdc0] items-center flex flex-col rounded-xl">
+
+            <h1 class="pt-6 text-3xl font-semibold">Cart Totals</h1>
+
+            <div class="flex pt-10 gap-14">
+
+                <span>Subtotal:</span>
+                <span id="subtotal" class="font-medium text-gray-700">₹0</span>
+            </div>
+
+            <div class="flex pt-6 gap-20">
+
+                <span>Total:</span>
+                <span id="total" class="text-xl font-bold text-yellow-500">₹0</span>
+            </div>
+            
+            <button class="mt-8 h-12 w-40 border-black border-2 rounded-lg hover:bg-[#f0c7a4]">
+                Check Out
+            </button>
+        </div>
+
+    </section>
+
+
+    <footer class="h-[190px] bg-[#dccdc0] flex items-center px-12 gap-28">
+
+        <div class="flex items-center gap-4">
+            <img class="h-10 w-10" src="./images/High.png" alt="">
+
+            <div>
+                <h1>High Quality</h1>
+                <p class="text-gray-500">Crafted from top material</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <img class="h-10 w-10" src="./images/Warranty.png" alt="">
+
+            <div>
+                <h1>Warranty Protection</h1>
+                <p class="text-gray-500">Over 2 Years</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <img class="h-10 w-10" src="./images/Free Shipping.png" alt="">
+
+            <div>
+                <h1>Free Shipping</h1>
+                <p class="text-gray-500">Order over 150 $</p>
+            </div>
+        </div>
+
+        <div class="flex items-center gap-4">
+            <img class="h-10 w-10" src="./images/Customer.png" alt="">
+
+            <div>
+                <h1>24/7 Support </h1>
+                <p class="text-gray-500">Decicated support</p>
+            </div>
+        </div>
+
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
